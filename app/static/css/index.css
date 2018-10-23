@@ -110,13 +110,14 @@ input[class="form-control"]
 }
 #upl-btn:hover> .hoodadd{
     width: 150px;
-}
+/* }
+
 .hoodadd{
     vertical-align: top;
     margin-top: -6px;
     width: 0;
     overflow-x: hidden;
-    transition: 450ms;
+    transition: 450ms; */
 }
 .cancel{
     color: red;
