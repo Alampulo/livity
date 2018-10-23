@@ -20,9 +20,9 @@
   </li> -->
 {% if request.user.profile.neighbourhood %}
     {% with request.user.profile.neighbourhood as hood %}
-      <li class="nav-item">
-          <button class="btn btn-block btn-outline-success navigation" route="/myhood/">{{ hood.Name }} hood</button>
-      </li>
+      
+      <button class="btn btn-block-danger  navigation" route="/myhood/">{{ hood.Name }} hood</button>
+     
     {% endwith %}
 {% endif %}
     <a class="btn btn-outline-secondary d-none d-md-block" href="/accounts/logout">Log out</a>

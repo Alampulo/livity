@@ -1,13 +1,13 @@
 body{
-	background-color: rgba(178, 189, 189, 0.88);
-	margin-top: 30px;
-    color: white!important;
+	background-color:lightskyblue;
+	margin-top : 30px;
+    color: grey;
 }
 .mainform{
-  background-color: whitesmoke;
-  max-width: 325px;
+  background-color: lightblue;
+  max-width: 525px;
   float: left;
-  max-height: 473px;
+  max-height: 673px;
   position: absolute;
   border: solid 1px #ddd;
   display: inline-table;
