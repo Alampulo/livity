@@ -65,10 +65,11 @@ small{
     height: calc(100vh - 56px);
     width: 250px;
     overflow-x: hidden;
-    background: #161e26;
+    background: whitesmoke;
     position: sticky;
     padding: .5rem;
-    max-width: 230px;
+    max-height: 150px;
+    max-width: 150px;
 }
 .nav-fill .nav-item{
     margin-top: 10%;
