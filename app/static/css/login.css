@@ -1,7 +1,7 @@
 body{
-	background-color: rgba(39, 54, 54, 0.88) !important;
+	background-color: rgba(39, 54, 54, 0.88);
 	margin-top: 30px;
-    color: white!important;
+    color: white;
 }
 .mainform{
   background-color: #343a40;
@@ -21,10 +21,10 @@ body{
   text-align: center;
 }
 small{
-    display: none!important;
+    display: none;
 }
 label{
-    display: none!important;
+    display: none!;
 }
 .invite{
     line-height: 20px;
@@ -55,15 +55,15 @@ label{
 }
 @media(max-width: 768px){
     .col-0 {
-      flex: 0 0 0!important;
+      flex: 0 0 0;
       max-width: 0;
     }
 }
-#sidebar{
+/* #sidebar{
     overflow-y: hidden;
     height: calc(100vh - 56px);
     width: 250px;
     overflow-x: hidden;
     background: #161e26;
     position: absolute;
-}
+} */

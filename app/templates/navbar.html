@@ -15,9 +15,9 @@
         </div>
         <button class="btn btn-block-danger  navigation" route="/hoods/">HOODS</button>
     </form>
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <button class="btn btn-block btn-outline-success navigation" route="/hoods/">Neighbourhoods</button>
-  </li>
+  </li> -->
 {% if request.user.profile.neighbourhood %}
     {% with request.user.profile.neighbourhood as hood %}
       <li class="nav-item">
