@@ -1,19 +1,13 @@
-
-<div class="container" style="background-color:rgb(70, 66, 66); width: 1000px; height:auto ; " >
-
-    {% extends 'base.html' %}
-    {% load bootstrap4 %}
-    {% load bootstrap4 %}
-    {% load static %}
-    {% block content %}
-
-
-
-<div id="userdetails" style="padding-left: 160px; padding-bottom: 40px;  " class="row col-12 mb-2 py-2">
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load bootstrap4 %}
+{% load static %}
+{% block content %}
+<div id="userdetails" class="row col-12 mb-2 py-2">
     <div class="mx-4 float-left">
-        <img src="{{request.user.profile.profile_picture.url}}" width="260" height="300" class="img-rounded border userimage">
+        <img src="{{request.user.profile.profile_picture.url}}" width="200" height="200" class="img-rounded border userimage">
     </div>
-    <div class="float-left mx-2">
+    <div class="float-left mx-4">
         <div style="margin-bottom: 20px;">
             <h3 style="vertical-align: middle">{{request.user.username}}</h3>
             <a href="{%  url 'create' %}">
@@ -30,11 +24,8 @@
         <div>Hood : <span>{{ request.user.profile.neighbourhood.Name }}</span></div>
         </div>
 </div>
-<div class="row"
- <div class="col-md-5">
-<!-- <div id="myhood">
-<h5 class="border-bottom">Hoods Created</h5> -->
-<h5>Created HOODS</h5>
+<div id="myhoods">
+<h5 class="border-bottom">Hoods Created</h5>
 {% for neighbourhood in request.user.profile.hoods.all %}
 <div class="card col-12 col-sm-6 col-lg-4 float-left p-1 group">
  <div class="bg-dark" style="height: 100%;">
@@ -71,6 +62,4 @@
 </div>
 {% endfor %}
 </div>
-</div> 
 {% endblock %}
-</div> 
